@@ -2,13 +2,33 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<TargetFramework>net5.0</TargetFramework>
 		<RootNamespace>SMD_Move_tool</RootNamespace>
 		<Version>1.0.0</Version>
 		<Authors>JarosLucky</Authors>
 		<ApplicationIcon />
 		<Win32Resource />
 		<StartupObject>SMD_Move_tool.Program</StartupObject>
+		<PackageProjectUrl>https://github.com/JarosLucky/SMD-Move-Tool</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/JarosLucky/SMD-Move-Tool</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<NeutralLanguage>en</NeutralLanguage>
+		<AnalysisLevel>latest</AnalysisLevel>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <ErrorReport>none</ErrorReport>
+	  <DebugType>none</DebugType>
+	  <DebugSymbols>false</DebugSymbols>
+	  <OutputPath>bin\Out\</OutputPath>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>
